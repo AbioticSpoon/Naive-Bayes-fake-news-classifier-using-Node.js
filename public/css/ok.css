@@ -1,0 +1,33 @@
+/* body {
+	background: blue;
+} */
+
+nav {
+	padding-top: 1.5em;
+	width: 80%;
+	margin: 0 auto;
+}
+nav ul {
+	width: 20em;
+	justify-content: space-between;
+	align-items: center;
+}
+nav ul li {
+	list-style: none;
+}
+nav ul a {
+	text-decoration: none;
+}
+
+.result-heading {
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+.input-heading {
+	font-weight: 200;
+	font-size: 2rem;
+	margin-bottom: 0.5em;
+}
+/* section p {
+	width: 65%;
+} */

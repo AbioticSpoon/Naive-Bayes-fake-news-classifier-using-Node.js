@@ -53,7 +53,8 @@ app.post('/forward', (req, res) => {
 
 	// console.log(finalText);
 	const out = naiveBayes.classify(finalText, 'unknown');
-	res.render('ok', { out: out });
+	const content = { out, text };
+	res.render('ok', { content: content });
 });
 
 // Listen-Route

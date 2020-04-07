@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ok.css">
     <title>Document</title>
 </head>
 <body>
-    <%= out %> 
+    <nav class="d-flex justify-content-between">
+        <h4>Fake</h4>
+        <ul class="d-flex justify-content-around">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <h1 class="display-4 result-heading">Here are your results</h1>
+        <h1 class="text-muted input-heading">Your given input news</h1>
+        <p>"<%= content.text %>"</p>
+        <h1 class="mt-5 text-danger text-uppercase">Your News seems to be <%= content.out %> </h1>
+    </section> 
 </body>
 </html>
