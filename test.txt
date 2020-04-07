@@ -1,0 +1,4 @@
+the quick rabbit jumps fences:::real
+bad is the:::fake
+this is fantastic:::real
+no i will not allow this:::fake
