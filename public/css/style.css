@@ -193,3 +193,50 @@ footer p {
 .display-4 {
 	color: #2b3b93;
 }
+
+/* SCROLL ICON */
+
+.icon-scroll,
+.icon-scroll:before {
+	position: absolute;
+	left: 50%;
+}
+
+.icon-scroll {
+	width: 25px;
+	height: 50px;
+	margin-left: -20px;
+	bottom: 6%;
+	margin-top: -35px;
+	box-shadow: inset 0 0 0 1px #0275d8;
+	border-radius: 25px;
+}
+
+.icon-scroll:before {
+	content: '';
+	width: 8px;
+	height: 8px;
+	background: #0275d8;
+	margin-left: -4px;
+	top: 8px;
+	border-radius: 4px;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-name: scroll;
+}
+
+@keyframes scroll {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(32px);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.icon-scroll {
+		display: none;
+	}
+}

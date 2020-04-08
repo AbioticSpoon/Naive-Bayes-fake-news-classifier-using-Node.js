@@ -30,6 +30,10 @@ app.get('/about', (req, res) => {
 	res.render('about');
 });
 
+app.get('/contact', (req, res) => {
+	res.render('contact');
+});
+
 // Post-Route
 app.post('/forward', (req, res) => {
 	const text = req.body.text;
