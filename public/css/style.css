@@ -4,16 +4,34 @@
 	box-sizing: border-box;
 }
 
+.container-fluid {
+	background: #f3f3f3;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+}
+
 nav {
-	padding-top: 1.5em;
+	padding-top: 1em;
 	width: 80%;
 	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 nav ul {
 	width: 25em;
 }
 nav ul li {
 	list-style: none;
+}
+.nav-btn {
+	text-decoration: none !important;
+	font-size: 0.95rem;
+	transition: all 0.2s ease-in-out;
+}
+.nav-btn:hover {
+	color: mediumblue;
 }
 main {
 	min-height: 100vh;
@@ -48,6 +66,7 @@ button {
 	margin-top: 0.5em;
 }
 
+/* Main Responsive */
 @media only screen and (max-width: 768px) {
 	.container {
 		flex-direction: column-reverse;
@@ -62,7 +81,7 @@ button {
 	}
 	.image-wrapper img {
 		/* border: 2px solid red; */
-		width: 80%;
+		width: 100%;
 	}
 	.content-wrapper {
 		width: 100%;
@@ -77,19 +96,21 @@ button {
 }
 
 /* Section */
+
 section {
 	min-height: 70vh;
 	background: #f3f3f3;
-	/* border: 2px solid red; */
 }
 
+/* Section Image */
 .img2-wrapper {
 	width: 40%;
-	/* border: 1px solid blue; */
 }
 .img2-wrapper img {
 	width: 100%;
 }
+
+/* Section Content */
 .about-me {
 	display: flex;
 	align-items: center;
@@ -103,12 +124,14 @@ section {
 	width: 42%;
 }
 .about-heading {
-	width: 4.4em;
+	width: 7em;
 	padding-bottom: 0.2em;
 	font-weight: 400;
-	border-bottom: 2px solid #6c63ff;
+	border-bottom: 2px solid #0275d8;
 	margin-bottom: 1em;
 }
+
+/* Section Resonsive */
 @media only screen and (max-width: 768px) {
 	.img2-wrapper img {
 		display: none;
@@ -117,5 +140,43 @@ section {
 		width: 100%;
 		margin-top: 2em;
 		margin-bottom: 2em;
+	}
+}
+
+/* Footer */
+
+footer {
+	width: 90%;
+	margin: 0 auto;
+	min-height: 15vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+footer p {
+	font-size: 0.9rem;
+}
+
+/* Social Icons */
+.social {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1em;
+	width: 8em;
+}
+
+.social-img {
+	width: 20px;
+}
+
+/* Footer-Responsive */
+
+@media only screen and (max-width: 768px) {
+	footer {
+		flex-direction: column;
+		min-height: 25vh;
+	}
+	footer h4 {
+		margin-top: 1em;
 	}
 }

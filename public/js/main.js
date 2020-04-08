@@ -14,3 +14,4 @@ var options = {
 
 const darkmode = new Darkmode(options);
 darkmode.showWidget();
+console.log(darkmode.isActivated());
