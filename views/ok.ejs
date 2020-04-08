@@ -17,10 +17,19 @@
         </ul>
     </nav>
     <section class="container">
+        
         <h1 class="display-4 result-heading">Here are your results</h1>
-        <h1 class="text-muted input-heading">Your given input news</h1>
+        <h1 class="text-muted input-heading">Your given input news:</h1>
         <p>"<%= content.text %>"</p>
         <h1 class="mt-5 text-danger text-uppercase">Your News seems to be <%= content.out %> </h1>
+        <h4 class="another">Check another News</h4>
+        <form action="/forward" method="POST">
+            <div class="form-group">
+                <input class="form-control" type="text" name="text" id="" placeholder="Enter your news here" required
+                    autocomplete="off">
+                <button type="submit" class="btn btn-primary mt-2">Submit</button>
+            </div>
+        </form>
     </section> 
 </body>
 </html>

@@ -10,19 +10,22 @@ nav {
 	margin: 0 auto;
 }
 nav ul {
-	width: 15em;
+	width: 25em;
 }
 nav ul li {
 	list-style: none;
+}
+main {
+	min-height: 100vh;
 }
 
 .image-wrapper img {
 	width: 100%;
 }
 .image-wrapper {
-	width: 50%;
+	width: 40%;
 }
-.container {
+.main-container {
 	min-height: 90vh;
 	display: flex;
 	justify-content: space-between;
@@ -43,4 +46,76 @@ form {
 
 button {
 	margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		flex-direction: column-reverse;
+		justify-content: center;
+		/* border: 1px solid blue; */
+	}
+	nav ul a {
+		display: none;
+	}
+	.image-wrapper {
+		width: 80%;
+	}
+	.image-wrapper img {
+		/* border: 2px solid red; */
+		width: 80%;
+	}
+	.content-wrapper {
+		width: 100%;
+		text-align: center;
+	}
+	form {
+		margin: 0 auto;
+	}
+	.welcome-heading {
+		margin-top: 1.2em;
+	}
+}
+
+/* Section */
+section {
+	min-height: 70vh;
+	background: #f3f3f3;
+	/* border: 2px solid red; */
+}
+
+.img2-wrapper {
+	width: 40%;
+	/* border: 1px solid blue; */
+}
+.img2-wrapper img {
+	width: 100%;
+}
+.about-me {
+	display: flex;
+	align-items: center;
+}
+.section-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content2-wrapper {
+	width: 42%;
+}
+.about-heading {
+	width: 4.4em;
+	padding-bottom: 0.2em;
+	font-weight: 400;
+	border-bottom: 2px solid #6c63ff;
+	margin-bottom: 1em;
+}
+@media only screen and (max-width: 768px) {
+	.img2-wrapper img {
+		display: none;
+	}
+	.content2-wrapper {
+		width: 100%;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
 }

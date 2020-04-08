@@ -18,9 +18,13 @@ nav ul li {
 nav ul a {
 	text-decoration: none;
 }
+.another {
+	margin-top: 2em;
+	font-weight: 200;
+}
 
 .result-heading {
-	margin-top: 2em;
+	margin-top: 1em;
 	margin-bottom: 1em;
 }
 .input-heading {
@@ -28,6 +32,23 @@ nav ul a {
 	font-size: 2rem;
 	margin-bottom: 0.5em;
 }
+form {
+	width: 50%;
+	margin-top: 1em;
+}
 /* section p {
 	width: 65%;
 } */
+
+@media only screen and (max-width: 768px) {
+	nav a {
+		display: none;
+	}
+	.container {
+		text-align: center;
+	}
+	form {
+		margin-top: 1em;
+		width: 100%;
+	}
+}
