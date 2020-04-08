@@ -20,7 +20,7 @@ nav {
 	align-items: center;
 }
 nav img {
-	width: 30px;
+	width: 120px;
 	padding-bottom: 1em;
 }
 nav ul {
@@ -183,4 +183,13 @@ footer p {
 	footer h4 {
 		margin-top: 1em;
 	}
+}
+
+.main-image {
+	width: 50px;
+	margin-right: -10px;
+	margin-bottom: 5px;
+}
+.display-4 {
+	color: #2b3b93;
 }
