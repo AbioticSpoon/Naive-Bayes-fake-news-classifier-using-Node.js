@@ -26,6 +26,10 @@ app.get('/', (req, res) => {
 	res.render('home');
 });
 
+app.get('/about', (req, res) => {
+	res.render('about');
+});
+
 // Post-Route
 app.post('/forward', (req, res) => {
 	const text = req.body.text;

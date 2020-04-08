@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <title>About</title>
+</head>
+<body>
+    <%- include("_nav_partial.ejs") %> 
+    <div class="about-page-title">
+        <h1 class="display-4">About Us</h1>
+    </div>
+    <div class="container about-page-content">
+        <div class="about-page-text">
+            <h4 class="text-muted">Who are we?</h4>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sequi in, eos cupiditate accusantium consectetur ex necessitatibus ullam veniam deserunt exercitationem, excepturi aliquam natus labore assumenda, delectus fugit reiciendis repellat harum accusamus vitae officia magni! 
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sint sit perspiciatis ea, libero accusamus id labore necessitatibus aperiam minima culpa dolor dicta illo reprehenderit.
+            </p>
+            <a href="#" class="btn btn-info">Read More</a>
+        </div>
+        <div class="about-page-img">
+            <img src="images/undraw_team_spirit_hrr4.svg" alt="">
+        </div>
+    </div>
+    <div class="blah">
+        <div class="container our-team">
+            <h3>Our Team</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil inventore distinctio at porro est!</p>
+            <div class="team-images">
+                <div class="person">
+                    <img class="person-img" src="images/peAjay.jpg" alt="">
+                    <p>Ajay Varghese</p>
+                </div>
+                <div class="person">
+                    <img class="person-img" src="images/peLijo.jpg" alt="">
+                    <p>Lijo Antony</p>
+                </div>
+                <div class="person">
+                    <img class="person-img" src="images/peAmeer.jpg" alt="">
+                    <p>Mohamed Ameer</p>
+                </div>
+                <div class="person">
+                    <img class="person-img" src="images/peJunaid.jpg" alt="">
+                    <p>Mohammed Junaid</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include("_footer_partial.ejs") %>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+    <script>
+        new Darkmode().showWidget();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

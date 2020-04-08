@@ -3,29 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FilterFact || Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- NavBar -->
-    <div class="container-fluid">
-        <nav>
-            <h5>FilterFacts</h5>
-            <ul class="d-flex justify-content-around">
-                <li><a class="nav-btn" href="/">Home</a></li>
-                <li><a class="nav-btn" href="#about-us">About</a></li>
-                <li><a class="nav-btn" href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+    <%- include("_nav_partial.ejs") %> 
     <main>
     <div class="container main-container">
         <div class="content-wrapper">
             <h2 class="welcome-heading">Welcome to</h2>
             <h2 class="display-4">Filter Facts</h2>
-            <p>where we use ML algorithms to predict you the truthfulness in your news</p>
+            <p>Where we use Machine Learning algorithms to predict you the truthfulness of your news</p>
             <form action="/forward" method="POST">
                 <div class="form-group">
                     <input class="form-control" type="text" name="text" id="" placeholder="Check your news here" required
