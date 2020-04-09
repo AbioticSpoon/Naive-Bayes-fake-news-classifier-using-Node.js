@@ -1,5 +1,5 @@
 .contact-page-title {
-	min-height: 30vh;
+	min-height: 20vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -41,4 +41,31 @@
 
 .address-p {
 	margin-top: 5em;
+}
+
+/* .mail-sent {
+	position: fixed;
+	bottom: 2%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1.3em;
+} */
+
+@media only screen and (max-width: 950px) {
+	.form-wrapper {
+		flex-direction: column;
+		width: 60%;
+	}
+	.left {
+		width: 100%;
+	}
+	.right {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.form-wrapper {
+		width: 90%;
+	}
 }

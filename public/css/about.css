@@ -72,3 +72,43 @@
 	display: flex;
 	justify-content: space-around;
 }
+
+.first-two {
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+}
+.second-two {
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+}
+
+@media only screen and (max-width: 995px) {
+	.team-images {
+		flex-direction: column;
+	}
+	.first-two {
+		width: 100%;
+	}
+	.second-two {
+		width: 100%;
+	}
+	.our-team {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	.first-two {
+		flex-direction: column;
+	}
+	.second-two {
+		flex-direction: column;
+	}
+	.our-team {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+}

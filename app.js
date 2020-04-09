@@ -5,6 +5,11 @@ const NaiveBayes = require('node-naive-bayes');
 const aposToLexForm = require('apos-to-lex-form');
 const SW = require('stopword');
 
+const nodemailer = require('nodemailer');
+require('dotenv').config;
+
+const contactRouter = require('./routes/contact');
+
 var SpellCorrector = require('spelling-corrector');
 var spellCorrector = new SpellCorrector();
 spellCorrector.loadDictionary();
@@ -16,6 +21,8 @@ const PORT = process.env.PORT || 3000;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use('/contact', contactRouter);
 
 // Naive-Bayes-classifier
 const naiveBayes = new NaiveBayes();
@@ -28,10 +35,6 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
 	res.render('about');
-});
-
-app.get('/contact', (req, res) => {
-	res.render('contact');
 });
 
 // Post-Route
