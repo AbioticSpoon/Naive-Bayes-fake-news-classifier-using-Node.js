@@ -51,7 +51,7 @@ router.post('/', (req, res) => {
 	main().catch(console.error);
 
 	// msg = 'Thankyou for contacting us';
-
+	// res.redirect('/');
 	res.render('contact');
 });
 

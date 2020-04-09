@@ -15,3 +15,14 @@ var options = {
 const darkmode = new Darkmode(options);
 darkmode.showWidget();
 console.log(darkmode.isActivated());
+
+let bars = document.querySelector('.bar-icon');
+
+bars.addEventListener('click', function() {
+	// console.log(open);
+	document.querySelector('.open').classList.toggle('active');
+});
+
+document.querySelector('.go-back').addEventListener('click', function() {
+	document.querySelector('.open').classList.toggle('active');
+});
